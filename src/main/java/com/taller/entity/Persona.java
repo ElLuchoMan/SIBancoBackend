@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Persona")
-public class User implements Serializable {
+public class Persona implements Serializable {
 	private static final long serialVersionUID = -7986593455542406220L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,7 +27,7 @@ public class User implements Serializable {
 	@Column(name = "CELULAR")
 	private Number celular;
 
-	public User(Number id, String correo, String password, String nombre, String apellido, String direccion,
+	public Persona(Number id, String correo, String password, String nombre, String apellido, String direccion,
 			Number telefono, Number celular) {
 		super();
 		this.id = id;
